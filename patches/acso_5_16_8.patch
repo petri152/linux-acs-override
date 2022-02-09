@@ -1,7 +1,7 @@
-diff --git a/a/Documentation/admin-guide/kernel-parameters.txt b/b/Documentation/admin-guide/kernel-parameters.txt
+diff --git a/Documentation/admin-guide/kernel-parameters.txt b/Documentation/admin-guide/kernel-parameters.txt
 index 2fba824..e9044f1 100644
---- a/a/Documentation/admin-guide/kernel-parameters.txt
-+++ b/b/Documentation/admin-guide/kernel-parameters.txt
+--- a/Documentation/admin-guide/kernel-parameters.txt
++++ b/Documentation/admin-guide/kernel-parameters.txt
 @@ -3922,6 +3922,15 @@
  		nomsi		[MSI] If the PCI_MSI kernel config parameter is
  				enabled, this kernel boot option can be used to
@@ -18,10 +18,10 @@ index 2fba824..e9044f1 100644
  		noioapicquirk	[APIC] Disable all boot interrupt quirks.
  				Safety option to keep boot IRQs enabled. This
  				should never be necessary.
-diff --git a/a/drivers/pci/quirks.c b/b/drivers/pci/quirks.c
+diff --git a/drivers/pci/quirks.c b/drivers/pci/quirks.c
 index 20a9326..6474f79 100644
---- a/a/drivers/pci/quirks.c
-+++ b/b/drivers/pci/quirks.c
+--- a/drivers/pci/quirks.c
++++ b/drivers/pci/quirks.c
 @@ -3588,6 +3588,107 @@ static void quirk_no_bus_reset(struct pci_dev *dev)
  	dev->dev_flags |= PCI_DEV_FLAGS_NO_BUS_RESET;
  }
